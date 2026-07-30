@@ -1,0 +1,25 @@
+{
+    "name": "fero-checkout-server",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "dev": "node --watch src/server.js",
+        "start": "node src/server.js",
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+    },
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "supertest": "^7.0.0"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "transform": {}
+    }
+}
